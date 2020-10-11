@@ -1,0 +1,7 @@
+check "0.6 spa new note.png" for answer
+
+title 0.6 spa new note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 json returned {"message":"note created"}
+
